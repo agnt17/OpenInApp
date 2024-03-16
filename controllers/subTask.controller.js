@@ -82,7 +82,7 @@ export const deleteSubTask = async (req, res) => {
 
   try {
     await SubTask.findOneAndDelete(subtaskId);
-    res.status(200).json({ message: "Task deleted successfully" });
+    res.status(200).json({ message: "SubTask deleted successfully" });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Server Error" });
